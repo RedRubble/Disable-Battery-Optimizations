@@ -14,7 +14,8 @@
 *.ipr
 *.iws
 *.buildship.*
-.idea/
+/.idea/
+disable_battery_optimization.iml
 
 # Visual Studio Code related
 .vscode/

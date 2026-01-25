@@ -2,8 +2,9 @@ package in.jvapps.disable_battery_optimization.utils;
 
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.preference.PreferenceManager;
 import android.util.Log;
+
+import androidx.preference.PreferenceManager;
 
 import java.lang.ref.WeakReference;
 import java.util.Objects;

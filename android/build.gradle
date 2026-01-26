@@ -38,11 +38,6 @@ android {
     lint {
         disable 'MissingTranslation'
     }
-
-    tasks.withType(JavaCompile) {
-        options.compilerArgs << "-Xlint:all"          // Show all warnings
-        options.deprecation = true                     // Show deprecation warnings
-    }
 }
 
 dependencies {

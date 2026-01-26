@@ -64,7 +64,7 @@ public class DisableBatteryOptimizationPlugin implements FlutterPlugin, Activity
         switch (call.method) {
             case "showEnableAutoStart":
                 try {
-                    List arguments = (List) call.arguments;
+                    List<?> arguments = (List<?>) call.arguments;
                     if (arguments != null) {
                         autoStartTitle = String.valueOf(arguments.get(0));
                         autoStartMessage = String.valueOf(arguments.get(1));
@@ -81,7 +81,7 @@ public class DisableBatteryOptimizationPlugin implements FlutterPlugin, Activity
                 break;
             case "showDisableManBatteryOptimization":
                 try {
-                    List arguments = (List) call.arguments;
+                    List<?> arguments = (List<?>) call.arguments;
                     if (arguments != null) {
                         manBatteryTitle = String.valueOf(arguments.get(0));
                         manBatteryMessage = String.valueOf(arguments.get(1));
@@ -107,7 +107,7 @@ public class DisableBatteryOptimizationPlugin implements FlutterPlugin, Activity
                 break;
             case "disableAllOptimizations":
                 try {
-                    List arguments = (List) call.arguments;
+                    List<?> arguments = (List<?>) call.arguments;
                     if (arguments != null) {
                         autoStartTitle = String.valueOf(arguments.get(0));
                         autoStartMessage = String.valueOf(arguments.get(1));
